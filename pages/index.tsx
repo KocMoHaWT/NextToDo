@@ -1,6 +1,13 @@
 import React from 'react';
-function HomePage() {
-    return <div>Welcome to Next.js!</div>
+import ToDoView from '../src/core/features/todoList/containers/toDoView/index';
+import StoreLayout from '../src/core/layouts/StoreLayout';
+
+function HomePage(): JSX.Element {
+  return (
+    <StoreLayout>
+      <ToDoView />
+    </StoreLayout>
+  );
 }
 
-export default HomePage
+export default HomePage;
