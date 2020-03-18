@@ -1,0 +1,23 @@
+@import '../../../_variables.scss';
+
+.button {
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 16px;
+  border: 1px solid $fist-color;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+
+  &:active {
+    background-color: $fist-color;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &.unborder {
+    border: none;
+  }
+}

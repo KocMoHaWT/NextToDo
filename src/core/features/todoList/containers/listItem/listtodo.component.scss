@@ -1,0 +1,30 @@
+@import "../../../../_variables.scss";
+.list {
+  margin: 10px 0;
+}
+
+.listTodo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  &.completed {
+    background-color: #5ed8bb;
+    border-color: #5ed8bb;
+  }
+
+  .buttons {
+    display: flex;
+  }
+
+  .deleteBtn {
+    background-color: #ff4e4e;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: .5px 6px;
+  }
+}

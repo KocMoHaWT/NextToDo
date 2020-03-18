@@ -1,4 +1,5 @@
 import React, { forwardRef, Ref } from 'react';
+import styles from './input.component.scss';
 
 interface InputProps {
   type: 'text';
@@ -10,5 +11,5 @@ interface InputProps {
 }
 
 export const Input: React.FunctionComponent<InputProps> = forwardRef((props, ref) => {
-  return <input ref={ref} {...props} />;
+  return <input ref={ref} {...props} className={styles.input} />;
 });

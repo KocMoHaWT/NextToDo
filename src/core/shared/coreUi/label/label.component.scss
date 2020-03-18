@@ -1,0 +1,17 @@
+.container {
+  font-size: 16px;
+
+  .label {
+    margin-bottom: 10px;
+  }
+
+  &.above {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &.right {
+    display: inline-flex;
+    flex-direction: row-reverse;
+  }
+}

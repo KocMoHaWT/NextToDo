@@ -42,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/dom": "^7.0.4",
     "@types/react": "^16.9.23",
     "@typescript-eslint/eslint-plugin": "^2.21.0",
     "@typescript-eslint/parser": "^2.21.0",

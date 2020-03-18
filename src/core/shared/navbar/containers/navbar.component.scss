@@ -1,0 +1,24 @@
+@import "../../../_variables.scss";
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  li {
+    padding: 5px 10px;
+    border: 1px solid $fist-color;
+    border-radius: 16px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .current {
+    background-color: $fist-color;
+    color: #FFFFFF;
+  }
+}

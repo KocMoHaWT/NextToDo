@@ -14,7 +14,7 @@ interface FormInputProps {
 export const FormInput: React.FunctionComponent<FormInputProps> = forwardRef((props, ref) => {
   const { title, ...otherProps } = props;
   return (
-    <Label title={title}>
+    <Label title={title} position="above">
       <Input ref={ref} {...otherProps} />
     </Label>
   );

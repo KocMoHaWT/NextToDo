@@ -1,12 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../../../../../assets/sass/reset.scss';
 import { useDispatch } from 'react-redux';
-import css from './todoView.component.scss';
+import styles from './todoView.component.scss';
 import { NavBar } from '../../../../shared/navbar/containers/navbar';
-import { AddTodoAct } from '../../todoList.actions';
+import { AddTodoAct, RemoveTodoAct, ToggleCompleteTodoAct } from '../../todoList.actions';
 import { ToDo } from '../../../../shared/interfaces/toDo';
 import { FormInput } from '../../../../shared/coreUi/formInput/FormInput';
-import { CheckBox } from '../../../../shared/coreUi/checkBox/CheckBox';
+import { Button } from '../../../../shared/coreUi/button/Button';
+import { ListTodos } from '../listItem/ListTodo';
 
 interface ToDoViewProps {
   todos: ToDo[];
@@ -29,22 +30,38 @@ export const ToDoView: React.FunctionComponent<ToDoViewProps> = ({ todos, nextId
 
   const addTodo = (): void => {
     const todo = { id: nextIndex, info: inputValue, completed: false };
+    if (inputValue.trim() === '') {
+      return;
+    }
     dispatch(new AddTodoAct({ todo }));
     setInputValue('');
   };
 
-  const toggleChange = (): void => {
-    console.log('fjdfd');
+  const toggleComplete = (id: number): void => {
+    dispatch(new ToggleCompleteTodoAct({ id }));
+  };
+  const removeTodo = (id: number): void => {
+    dispatch(new RemoveTodoAct({ id }));
   };
 
   return (
-    <div className={css.wrapper}>
-      <div className={css.todoBlock}>
-        <h1>To Do List</h1>
-        <FormInput ref={inputRef} title="add to do" onChange={onChange} type="text" name="addTodo" value={inputValue} />
-        <CheckBox name="todo progress" onChange={toggleChange} />
-        <button onClick={addTodo}>addTodo</button>
-        <ul>{todos && todos.map(todo => <li key={todo.id}>{todo.info}</li>)}</ul>
+    <div className={styles.wrapper}>
+      <div className={styles.todoBlock}>
+        <h1 className={styles.title}>To Do List</h1>
+        <div className={styles.inputBlock}>
+          <FormInput
+            ref={inputRef}
+            title="add to do"
+            onChange={onChange}
+            type="text"
+            name="addTodo"
+            value={inputValue}
+          />
+          <Button type="button" borderLess={false} onClick={addTodo}>
+            add todo
+          </Button>
+        </div>
+        <ListTodos todos={todos} onDelete={removeTodo} onComplete={toggleComplete} />
         <NavBar />
       </div>
     </div>
