@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import '../../../../../assets/sass/reset.scss';
 import { useDispatch } from 'react-redux';
 import styles from './todoView.component.scss';
 import { NavBar } from '../../../../shared/navbar/containers/navbar';

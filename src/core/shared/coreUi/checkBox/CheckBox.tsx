@@ -5,8 +5,8 @@ import styles from './checkBox.component.scss';
 interface CheckBoxProps {
   defaultValue?: boolean;
   title?: string;
-  name: string;
-  onChange: (id) => void;
+  name?: string;
+  onChange?: (id) => void;
 }
 
 export const CheckBox: React.FunctionComponent<CheckBoxProps> = props => {
@@ -14,7 +14,7 @@ export const CheckBox: React.FunctionComponent<CheckBoxProps> = props => {
 
   return (
     <Label title={title || ''} className={styles.container}>
-      <input type="checkbox" {...otherProps} checked={defaultValue} className={styles.checkBox} />
+      <input type="checkbox" {...otherProps} defaultChecked={defaultValue} className={styles.checkBox} />
       <span className={styles.checkmark} />
     </Label>
   );
