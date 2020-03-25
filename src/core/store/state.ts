@@ -9,8 +9,8 @@ export interface AppState {
 export class Action {
   readonly type: string;
 
-  // eslint-disable-next-line @typescrip  t-eslint/no-explicit-any
-  payload: any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  payload?: any;
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   toJSON(): Record<string, any> {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import classnames from 'classNames';
+import classnames from 'classnames';
 import styles from './navbar.component.scss';
 import { navbarFilters, SetFilterAct } from '../navbar.actions';
 import { getFilter } from '../navbar.selector';

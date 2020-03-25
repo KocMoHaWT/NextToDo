@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button todo item renders correctly 1`] = `
+<li
+  className="listTodo"
+>
+  djf;lakjdf
+  <div
+    className="buttons"
+  >
+    <label
+      className="container container"
+    >
+      <span
+        className="label"
+      >
+        
+      </span>
+      <input
+        className="checkBox"
+        defaultChecked={false}
+        name="complete todo"
+        type="checkbox"
+      />
+      <span
+        className="checkmark"
+      />
+    </label>
+    <button
+      className="button unborder deleteBtn"
+      type="button"
+    >
+      ×
+    </button>
+  </div>
+</li>
+`;

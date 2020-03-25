@@ -1,5 +1,5 @@
 import React, { Ref, forwardRef } from 'react';
-import classnames from 'classNames';
+import classnames from 'classnames';
 import style from './label.component.scss';
 
 interface LabelProps {

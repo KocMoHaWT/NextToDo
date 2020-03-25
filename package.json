@@ -6,7 +6,8 @@
   "scripts": {
     "build": "next build",
     "start": "next dev",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "lint": "eslint \"**/*.{ts,tsx}\""
   },
   "repository": {
     "type": "git",

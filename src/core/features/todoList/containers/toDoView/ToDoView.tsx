@@ -6,7 +6,7 @@ import { AddTodoAct, RemoveTodoAct, ToggleCompleteTodoAct } from '../../todoList
 import { ToDo } from '../../../../shared/interfaces/toDo';
 import { FormInput } from '../../../../shared/coreUi/formInput/FormInput';
 import { Button } from '../../../../shared/coreUi/button/Button';
-import { ListTodos } from '../listItem/ListTodo';
+import { ListTodos } from '../listOfItems/ListTodos';
 
 interface ToDoViewProps {
   todos: ToDo[];

@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button list of items renders correctly 1`] = `
+<ul>
+  <li
+    className="listTodo"
+  >
+    djf;lakjdf
+    <div
+      className="buttons"
+    >
+      <label
+        className="container container"
+      >
+        <span
+          className="label"
+        >
+          
+        </span>
+        <input
+          className="checkBox"
+          defaultChecked={false}
+          name="complete todo"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="checkmark"
+        />
+      </label>
+      <button
+        className="button unborder deleteBtn"
+        onClick={[Function]}
+        type="button"
+      >
+        ×
+      </button>
+    </div>
+  </li>
+  <li
+    className="listTodo"
+  >
+    djf;lakjdf
+    <div
+      className="buttons"
+    >
+      <label
+        className="container container"
+      >
+        <span
+          className="label"
+        >
+          
+        </span>
+        <input
+          className="checkBox"
+          defaultChecked={false}
+          name="complete todo"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="checkmark"
+        />
+      </label>
+      <button
+        className="button unborder deleteBtn"
+        onClick={[Function]}
+        type="button"
+      >
+        ×
+      </button>
+    </div>
+  </li>
+  <li
+    className="listTodo completed"
+  >
+    djf;lakjdf
+    <div
+      className="buttons"
+    >
+      <label
+        className="container container"
+      >
+        <span
+          className="label"
+        >
+          
+        </span>
+        <input
+          className="checkBox"
+          defaultChecked={true}
+          name="complete todo"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="checkmark"
+        />
+      </label>
+      <button
+        className="button unborder deleteBtn"
+        onClick={[Function]}
+        type="button"
+      >
+        ×
+      </button>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`Button todo item renders correctly 1`] = `
+<ul>
+  <li
+    className="listTodo"
+  >
+    djf;lakjdf
+    <div
+      className="buttons"
+    >
+      <label
+        className="container container"
+      >
+        <span
+          className="label"
+        >
+          
+        </span>
+        <input
+          className="checkBox"
+          defaultChecked={false}
+          name="complete todo"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="checkmark"
+        />
+      </label>
+      <button
+        className="button unborder deleteBtn"
+        onClick={[Function]}
+        type="button"
+      >
+        ×
+      </button>
+    </div>
+  </li>
+  <li
+    className="listTodo"
+  >
+    djf;lakjdf
+    <div
+      className="buttons"
+    >
+      <label
+        className="container container"
+      >
+        <span
+          className="label"
+        >
+          
+        </span>
+        <input
+          className="checkBox"
+          defaultChecked={false}
+          name="complete todo"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="checkmark"
+        />
+      </label>
+      <button
+        className="button unborder deleteBtn"
+        onClick={[Function]}
+        type="button"
+      >
+        ×
+      </button>
+    </div>
+  </li>
+  <li
+    className="listTodo completed"
+  >
+    djf;lakjdf
+    <div
+      className="buttons"
+    >
+      <label
+        className="container container"
+      >
+        <span
+          className="label"
+        >
+          
+        </span>
+        <input
+          className="checkBox"
+          defaultChecked={true}
+          name="complete todo"
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <span
+          className="checkmark"
+        />
+      </label>
+      <button
+        className="button unborder deleteBtn"
+        onClick={[Function]}
+        type="button"
+      >
+        ×
+      </button>
+    </div>
+  </li>
+</ul>
+`;

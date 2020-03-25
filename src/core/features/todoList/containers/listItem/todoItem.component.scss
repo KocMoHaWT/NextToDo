@@ -1,4 +1,4 @@
-@import "../../../../_variables.scss";
+@import '../../../../_variables.scss';
 .list {
   margin: 10px 0;
 }
@@ -13,8 +13,8 @@
   margin-bottom: 10px;
 
   &.completed {
-    background-color: #5ed8bb;
-    border-color: #5ed8bb;
+    background-color: $green-500;
+    border-color: $green-500;
   }
 
   .buttons {
@@ -22,9 +22,9 @@
   }
 
   .deleteBtn {
-    background-color: #ff4e4e;
+    background-color: $red-600;
     font-size: 20px;
     border-radius: 5px;
-    padding: .5px 6px;
+    padding: 0.5px 6px;
   }
 }
